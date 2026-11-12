@@ -1,0 +1,23 @@
+{
+  "name": "Mario González Quintas",
+  "short_name": "M. González Quintas",
+  "description": "Investigación, publicaciones y CV de Mario González Quintas (LaserON, CINTECX, Universidade de Vigo).",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f151a",
+  "theme_color": "#15202b",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "img/marca/icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/marca/icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "img/marca/icono-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "img/marca/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Publicaciones", "url": "./#publicaciones" },
+    { "name": "Congresos", "url": "./#congresos" },
+    { "name": "Panel de edición", "url": "./editor.html" }
+  ]
+}

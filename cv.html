@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CV · Mario González Quintas</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Currículum vítae de Mario González Quintas, generado a partir de los datos de su web. Listo para guardar en PDF.">
+  <meta name="theme-color" content="#eef1f3">
+  <link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/marca/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="assets/css/sitio.css">
+  <link rel="stylesheet" href="assets/css/cv.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("mgq-tema");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        var etiquetas = { es: "es-ES", en: "en-GB", gl: "gl-ES", pt: "pt-PT", fr: "fr-FR" };
+        var q = (location.search.match(/[?&]lang=([a-z]{2})/) || [])[1];
+        var l = etiquetas[q] ? q : localStorage.getItem("mgq-idioma");
+        if (etiquetas[l]) document.documentElement.lang = etiquetas[l];
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="cv-pagina">
+  <div class="cv-barra" data-cv-barra></div>
+  <main class="cv-hoja" data-cv aria-live="polite"></main>
+
+  <noscript><p style="padding:1rem;font-family:sans-serif">Esta página necesita JavaScript para montar el CV a partir de los datos.</p></noscript>
+
+  <!-- Los mismos datos que la web -->
+  <script src="datos/perfil.js"></script>
+  <script src="datos/investigacion.js"></script>
+  <script src="datos/tesis.js"></script>
+  <script src="datos/publicaciones.js"></script>
+  <script src="datos/congresos.js"></script>
+  <script src="datos/proyectos.js"></script>
+  <script src="datos/software.js"></script>
+  <script src="datos/docencia.js"></script>
+  <script src="datos/trayectoria.js"></script>
+  <script src="datos/cursos.js"></script>
+  <script src="datos/idiomas.js"></script>
+  <script src="datos/premios.js"></script>
+  <script src="datos/actividades.js"></script>
+  <script src="datos/habilidades.js"></script>
+
+  <script src="assets/js/comun.js"></script>
+  <script src="assets/js/cv.js"></script>
+</body>
+</html>

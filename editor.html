@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Panel de edición · Mario González Quintas</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#15202b">
+  <link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/sitio.css">
+  <link rel="stylesheet" href="assets/css/editor.css">
+  <script>
+    (function () {
+      try { var t = localStorage.getItem("mgq-tema"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+      window.__erroresDatos = [];
+      window.addEventListener("error", function (ev) {
+        if (ev && ev.filename && /\/datos\//.test(ev.filename)) window.__erroresDatos.push({ archivo: ev.filename.split("/datos/")[1], linea: ev.lineno, mensaje: ev.message });
+      });
+    })();
+  </script>
+</head>
+<body class="editor">
+  <header class="ed-barra">
+    <a class="marca" href="index.html" title="Ver la web"><span data-logo></span><span class="marca-nombre">Panel de edición<span data-estado>Cargando…</span></span></a>
+    <div class="ed-acciones">
+      <label class="ed-auto" title="Al escribir en español, se traducen solos los demás idiomas"><input type="checkbox" data-accion="auto-traduccion" data-auto-traduccion> Traducir al escribir</label>
+      <button class="boton" type="button" data-accion="traducir-todo" title="Completa las traducciones que faltan en toda la web">Traducir lo que falta</button>
+      <button class="boton" type="button" data-accion="vista">Vista previa</button>
+      <button class="boton" type="button" data-accion="dlg-exportar">Exportar</button>
+      <button class="boton" type="button" data-accion="dlg-importar">Importar</button>
+      <button class="boton boton-acento" type="button" data-accion="dlg-publicar">Publicar</button>
+      <button class="boton-ico" type="button" data-accion="dlg-ayuda" aria-label="Ayuda" title="Ayuda" data-ico="documento"></button>
+      <button class="boton-ico" type="button" data-accion="tema" aria-label="Cambiar tema" title="Cambiar tema" data-ico="luna"></button>
+    </div>
+  </header>
+  <div data-avisos-editor></div>
+  <div class="ed-cuerpo">
+    <nav class="ed-colecciones" aria-label="Secciones de datos">
+      <label class="oculto-visual" for="sel-coleccion">Sección</label>
+      <select id="sel-coleccion" class="ed-select-movil"></select>
+      <ul data-colecciones></ul>
+    </nav>
+    <section class="ed-lista" aria-label="Elementos" data-lista></section>
+    <section class="ed-form" aria-label="Formulario" data-form tabindex="-1"></section>
+  </div>
+  <div class="ed-toast" role="status" aria-live="polite" data-toast hidden></div>
+
+  <dialog id="ed-dlg" aria-label="Diálogo"></dialog>
+
+  <script src="datos/perfil.js"></script>
+  <script src="datos/investigacion.js"></script>
+  <script src="datos/tesis.js"></script>
+  <script src="datos/publicaciones.js"></script>
+  <script src="datos/congresos.js"></script>
+  <script src="datos/proyectos.js"></script>
+  <script src="datos/software.js"></script>
+  <script src="datos/docencia.js"></script>
+  <script src="datos/trayectoria.js"></script>
+  <script src="datos/cursos.js"></script>
+  <script src="datos/idiomas.js"></script>
+  <script src="datos/premios.js"></script>
+  <script src="datos/actividades.js"></script>
+  <script src="datos/habilidades.js"></script>
+
+  <script src="assets/vendor/jszip.min.js"></script>
+  <script src="assets/js/comun.js"></script>
+  <script src="assets/js/esquema.js"></script>
+  <script src="assets/js/editor.js"></script>
+</body>
+</html>

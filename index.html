@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mario González Quintas</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Mario González Quintas: ingeniero biomédico e investigador en procesado láser de biomateriales (grupo LaserON, CINTECX, Universidade de Vigo). Publicaciones, congresos, proyectos, docencia y CV.">
+  <meta name="author" content="Mario González Quintas">
+  <meta name="theme-color" content="#eef1f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f151a" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mario González Quintas">
+  <meta property="og:description" content="Procesado láser de biomateriales para implantes y dispositivos médicos. LaserON, CINTECX, Universidade de Vigo.">
+  <meta property="og:image" content="img/marca/compartir.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/marca/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/marca/icono-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="gl" href="?lang=gl">
+  <link rel="alternate" hreflang="pt" href="?lang=pt">
+  <link rel="alternate" hreflang="fr" href="?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="./">
+  <link rel="stylesheet" href="assets/css/sitio.css">
+  <script>
+    /* Tema e idioma antes de pintar, para evitar parpadeos */
+    (function () {
+      try {
+        var t = localStorage.getItem("mgq-tema");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+        var etiquetas = { es: "es-ES", en: "en-GB", gl: "gl-ES", pt: "pt-PT", fr: "fr-FR" };
+        var q = (location.search.match(/[?&]lang=([a-z]{2})/) || [])[1];
+        var l = etiquetas[q] ? q : localStorage.getItem("mgq-idioma");
+        if (etiquetas[l]) document.documentElement.lang = etiquetas[l];
+      } catch (e) {}
+      /* Errores al leer los archivos de datos: se muestran en un aviso legible */
+      window.__erroresDatos = [];
+      window.addEventListener("error", function (ev) {
+        if (ev && ev.filename && /\/datos\//.test(ev.filename)) {
+          window.__erroresDatos.push({ archivo: ev.filename.split("/datos/")[1], linea: ev.lineno, mensaje: ev.message });
+        }
+      });
+    })();
+  </script>
+  <script type="application/ld+json" id="ld-persona"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="armazon">
+    <nav class="indice" aria-label="Secciones">
+      <a class="marca" href="#inicio" data-marca></a>
+      <ul class="nav-lista" data-nav></ul>
+      <div class="indice-pie">
+        <button class="boton-buscar" type="button" data-abrir-buscador></button>
+        <div class="fila" data-herramientas-indice></div>
+      </div>
+    </nav>
+
+    <div>
+      <header class="barra">
+        <a class="marca" href="#inicio" data-marca></a>
+        <div class="herramientas" data-herramientas-barra></div>
+      </header>
+
+      <main class="contenido" id="contenido" tabindex="-1">
+        <div data-avisos></div>
+        <section class="portada" id="inicio" data-portada aria-label="Presentación"></section>
+        <div data-secciones></div>
+        <footer class="pie" data-pie-pagina></footer>
+      </main>
+    </div>
+  </div>
+
+  <div class="menu-movil" data-menu-movil hidden></div>
+
+  <dialog id="dlg-visor" class="visor" aria-label="Imagen ampliada"></dialog>
+  <dialog id="dlg-texto" aria-label="Texto para copiar"></dialog>
+  <dialog id="dlg-buscador" class="buscador" aria-label="Buscar"></dialog>
+
+  <noscript>
+    <p style="padding:1rem;font-family:sans-serif">Esta web necesita JavaScript para mostrar el contenido. Mario González Quintas, investigador en procesado láser de biomateriales (LaserON, CINTECX, Universidade de Vigo). ORCID: <a href="https://orcid.org/0009-0009-5871-3760">0009-0009-5871-3760</a>.</p>
+  </noscript>
+
+  <!-- Contenido de la web: edita estos archivos (o usa editor.html) -->
+  <script src="datos/perfil.js"></script>
+  <script src="datos/investigacion.js"></script>
+  <script src="datos/tesis.js"></script>
+  <script src="datos/publicaciones.js"></script>
+  <script src="datos/congresos.js"></script>
+  <script src="datos/proyectos.js"></script>
+  <script src="datos/software.js"></script>
+  <script src="datos/docencia.js"></script>
+  <script src="datos/trayectoria.js"></script>
+  <script src="datos/cursos.js"></script>
+  <script src="datos/idiomas.js"></script>
+  <script src="datos/premios.js"></script>
+  <script src="datos/actividades.js"></script>
+  <script src="datos/habilidades.js"></script>
+
+  <!-- Funcionamiento de la web -->
+  <script src="assets/js/comun.js"></script>
+  <script src="assets/js/laser.js"></script>
+  <script src="assets/js/sitio.js"></script>
+</body>
+</html>
