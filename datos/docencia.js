@@ -121,9 +121,19 @@ CV.tfe = [
   {
     tipo: "TFG",
     estado: "en-curso",
-    anio: "2025/26",
+    anio: "2025/26–2026/27",
     rol: "codirector",
     titulo: { es: "Sistema de control térmico en lazo cerrado con calibración automática para ensayos de fatiga térmica por inducción", en: "Closed-loop thermal control system with automatic calibration for induction thermal fatigue testing", gl: "Sistema de control térmico en lazo pechado con calibración automática para ensaios de fatiga térmica por indución", pt: "Sistema de controlo térmico em malha fechada com calibração automática para ensaios de fadiga térmica por indução", fr: "Système de régulation thermique en boucle fermée avec étalonnage automatique pour essais de fatigue thermique par induction" },
+    titulacion: { es: "Simultaneidad del Grado en Ingeniería Biomédica y del Grado en Ingeniería en Electrónica Industrial y Automática", en: "Double degree in Biomedical Engineering and Industrial Electronics and Automation", gl: "Simultaneidade do Grao en Enxeñaría Biomédica e do Grao en Enxeñaría en Electrónica Industrial e Automática", pt: "Dupla licenciatura em Engenharia Biomédica e em Engenharia Eletrónica Industrial e Automação", fr: "Double licence en génie biomédical et en électronique industrielle et automatique" },
+    codirectores: "Erik Calvo García",
+    linea: "fatiga"
+  },
+  {
+    tipo: "TFG",
+    estado: "en-curso",
+    anio: "2025/26–2026/27",
+    rol: "codirector",
+    titulo: { es: "Efecto de la fatiga térmica sobre las propiedades mecánicas y superficiales de aleaciones metálicas para aplicaciones biomédicas", en: "Effect of thermal fatigue on the mechanical and surface properties of metallic alloys for biomedical applications", gl: "Efecto da fatiga térmica sobre as propiedades mecánicas e superficiais de aliaxes metálicas para aplicacións biomédicas", pt: "Efeito da fadiga térmica nas propriedades mecânicas e superficiais de ligas metálicas para aplicações biomédicas", fr: "Effet de la fatigue thermique sur les propriétés mécaniques et de surface d’alliages métalliques pour applications biomédicales" },
     titulacion: { es: "Simultaneidad del Grado en Ingeniería Biomédica y del Grado en Ingeniería en Electrónica Industrial y Automática", en: "Double degree in Biomedical Engineering and Industrial Electronics and Automation", gl: "Simultaneidade do Grao en Enxeñaría Biomédica e do Grao en Enxeñaría en Electrónica Industrial e Automática", pt: "Dupla licenciatura em Engenharia Biomédica e em Engenharia Eletrónica Industrial e Automação", fr: "Double licence en génie biomédical et en électronique industrielle et automatique" },
     codirectores: "Erik Calvo García",
     linea: "fatiga"
