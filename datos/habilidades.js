@@ -14,17 +14,18 @@ CV.habilidades = [
       { es: "Deposición láser de metal (LMD) y cladding", en: "Laser metal deposition (LMD) and cladding", gl: "Deposición láser de metal (LMD) e cladding", pt: "Deposição de metal por laser (LMD) e cladding", fr: "Dépôt de métal par laser (LMD) et rechargement" },
       { es: "Soldadura láser", en: "Laser welding", gl: "Soldadura láser", pt: "Soldadura a laser", fr: "Soudage laser" },
       { es: "Síntesis láser de nanopartículas", en: "Laser synthesis of nanoparticles", gl: "Síntese láser de nanopartículas", pt: "Síntese de nanopartículas por laser", fr: "Synthèse laser de nanoparticules" },
-      { es: "Impresión 3D (filamento y resina)", en: "3D printing (filament and resin)", gl: "Impresión 3D (filamento e resina)", pt: "Impressão 3D (filamento e resina)", fr: "Impression 3D (filament et résine)" }
+      { es: "Impresión 3D de filamento (Ultimaker, Raise) y de resina (Nexa)", en: "3D printing: filament (Ultimaker, Raise) and resin (Nexa)", gl: "Impresión 3D de filamento (Ultimaker, Raise) e de resina (Nexa)", pt: "Impressão 3D de filamento (Ultimaker, Raise) e de resina (Nexa)", fr: "Impression 3D filament (Ultimaker, Raise) et résine (Nexa)" }
     ]
   },
   {
     grupo: { es: "Caracterización", en: "Characterisation", gl: "Caracterización", pt: "Caracterização", fr: "Caractérisation" },
-    elementos: ["SEM-EDS", "TEM", { es: "DRX", en: "XRD", gl: "DRX", pt: "DRX", fr: "DRX" }, "XPS", "AFM", "Raman", "FTIR", "UV-Vis", "ICP-MS", "TGA/DSC", { es: "Perfilometría", en: "Profilometry", gl: "Perfilometría", pt: "Perfilometria", fr: "Profilométrie" }, { es: "Ángulo de contacto", en: "Contact angle", gl: "Ángulo de contacto", pt: "Ângulo de contacto", fr: "Angle de contact" }, "DLS", { es: "Potencial zeta", en: "Zeta potential", gl: "Potencial zeta", pt: "Potencial zeta", fr: "Potentiel zêta" }, { es: "Difracción láser", en: "Laser diffraction", gl: "Difracción láser", pt: "Difração laser", fr: "Diffraction laser" }, "BET", { es: "Metalografía", en: "Metallography", gl: "Metalografía", pt: "Metalografia", fr: "Métallographie" }]
+    elementos: ["SEM-EDS", "TEM", { es: "DRX", en: "XRD", gl: "DRX", pt: "DRX", fr: "DRX" }, "XPS", "AFM", "Raman", "FTIR", "UV-Vis", "ICP-MS", "TGA/DSC", { es: "Perfilometría interferométrica (Profilm3D)", en: "Interferometric profilometry (Profilm3D)", gl: "Perfilometría interferométrica (Profilm3D)", pt: "Perfilometria interferométrica (Profilm3D)", fr: "Profilométrie interférométrique (Profilm3D)" }, { es: "Ángulo de contacto", en: "Contact angle", gl: "Ángulo de contacto", pt: "Ângulo de contacto", fr: "Angle de contact" }, "DLS", { es: "Potencial zeta", en: "Zeta potential", gl: "Potencial zeta", pt: "Potencial zeta", fr: "Potentiel zêta" }, { es: "Difracción láser", en: "Laser diffraction", gl: "Difracción láser", pt: "Difração laser", fr: "Diffraction laser" }, "BET", { es: "Metalografía", en: "Metallography", gl: "Metalografía", pt: "Metalografia", fr: "Métallographie" }]
   },
   {
     grupo: { es: "Ensayos", en: "Testing", gl: "Ensaios", pt: "Ensaios", fr: "Essais" },
     elementos: [
       { es: "Corrosión y degradación (SBF, PBS, Tris-HCl)", en: "Corrosion and degradation (SBF, PBS, Tris-HCl)", gl: "Corrosión e degradación (SBF, PBS, Tris-HCl)", pt: "Corrosão e degradação (SBF, PBS, Tris-HCl)", fr: "Corrosion et dégradation (SBF, PBS, Tris-HCl)" },
+      { es: "Ensayos electroquímicos (voltametría cíclica, EIS)", en: "Electrochemical testing (cyclic voltammetry, EIS)", gl: "Ensaios electroquímicos (voltametría cíclica, EIS)", pt: "Ensaios eletroquímicos (voltametria cíclica, EIS)", fr: "Essais électrochimiques (voltampérométrie cyclique, SIE)" },
       { es: "Microdureza", en: "Microhardness", gl: "Microdureza", pt: "Microdureza", fr: "Microdureté" },
       { es: "Desgaste (pin-on-disk)", en: "Wear (pin-on-disk)", gl: "Desgaste (pin-on-disk)", pt: "Desgaste (pin-on-disk)", fr: "Usure (pion-disque)" },
       { es: "Tracción, flexión y compresión", en: "Tensile, bending and compression", gl: "Tracción, flexión e compresión", pt: "Tração, flexão e compressão", fr: "Traction, flexion et compression" },
@@ -36,7 +37,7 @@ CV.habilidades = [
   },
   {
     grupo: { es: "Simulación y diseño", en: "Simulation and design", gl: "Simulación e deseño", pt: "Simulação e projeto", fr: "Simulation et conception" },
-    elementos: ["ANSYS", "Abaqus", "COMSOL", "SolidWorks", "CATIA", "AutoCAD", "3D Slicer", "OpenSim"]
+    elementos: ["ANSYS", "Abaqus", "COMSOL", "SolidWorks", "CATIA", "AutoCAD", "Fusion 360", "Meshmixer", "3D Slicer", "OpenSim"]
   },
   {
     grupo: { es: "Datos y programación", en: "Data and programming", gl: "Datos e programación", pt: "Dados e programação", fr: "Données et programmation" },

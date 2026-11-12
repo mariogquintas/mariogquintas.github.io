@@ -495,7 +495,8 @@
     const pubs = U.pubs(), coms = U.coms();
     const tfe = U.lista(CVx.tfe);
     const doc = U.lista(CVx.docencia);
-    const cursos = U.lista(CVx.cursos);
+    // Formación: cuentan las habilitaciones de equipos y los cursos; los «otros títulos» (p. ej., monitor de natación) no
+    const cursos = U.lista(CVx.cursos).filter((c) => (c.grupo || "cursos") !== "otros");
     const pos = pubs.map((p) => U.posicion(p.autores)).filter(Boolean);
     const paises = new Set(coms.map((c) => U.pais(c.lugar)).filter(Boolean));
     const nombresPais = [...new Set(coms.map((c) => U.pais(c.lugar, U.idioma)).filter(Boolean))];
