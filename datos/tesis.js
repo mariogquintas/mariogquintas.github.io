@@ -27,7 +27,7 @@ CV.tesis = [
     inicio: "2024-10",
     trimestres: 16,
     hitos: [
-      { fecha: "2024-10", texto: { es: "Primera matrícula en el programa de doctorado", en: "First enrolment in the PhD programme", gl: "Primeira matrícula no programa de doutoramento", pt: "Primeira inscrição no programa de doutoramento", fr: "Première inscription en doctorat" } },
+      { fecha: "2024-10", texto: { es: "Admisión y primera matrícula en el programa de doctorado, con dedicación a tiempo completo", en: "Admission and first enrolment in the PhD programme, full-time", gl: "Admisión e primeira matrícula no programa de doutoramento, con dedicación a tempo completo", pt: "Admissão e primeira inscrição no programa de doutoramento, em regime de tempo integral", fr: "Admission et première inscription en doctorat, à temps plein" } },
       { fecha: "2025-02", texto: { es: "Plan de investigación aprobado (11/02/2025)", en: "Research plan approved (11/02/2025)", gl: "Plan de investigación aprobado (11/02/2025)", pt: "Plano de investigação aprovado (11/02/2025)", fr: "Projet de recherche approuvé (11/02/2025)" } },
       { fecha: "2026-09", texto: { es: "Matrícula del tercer curso (2026/27)", en: "Third-year enrolment (2026/27)", gl: "Matrícula do terceiro curso (2026/27)", pt: "Inscrição no terceiro ano (2026/27)", fr: "Inscription en troisième année (2026/27)" } }
     ],

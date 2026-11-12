@@ -433,8 +433,16 @@ sub, sup { font-size: .72em; line-height: 0; }
 .com-material span { position: absolute; left: .35rem; bottom: .35rem; font-family: var(--f-display); font-size: .7rem; font-weight: 600; background: var(--tinta); color: var(--papel); padding: .05rem .4rem; border-radius: 3px; }
 
 /* ---------- Proyectos ---------- */
-.proyectos { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); align-items: start; }
-.proyecto { background: var(--superficie); border: 1px solid var(--linea-2); border-radius: var(--r-l); padding: 1.3rem 1.3rem 1.4rem; display: grid; gap: .7rem; scroll-margin-top: 80px; }
+.proyectos { display: grid; gap: 1rem; }
+.proyecto { background: var(--superficie); border: 1px solid var(--linea-2); border-radius: var(--r-l); padding: 1.3rem 1.3rem 1.4rem; display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem 2rem; align-items: start; scroll-margin-top: 80px; }
+.proyecto-lado { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .7rem; min-width: 0; }
+.proyecto-lado .meta-3 { flex-basis: 100%; }
+.proyecto-cuerpo { display: grid; gap: .6rem; min-width: 0; }
+.proyecto-cuerpo ul { max-width: 72ch; }
+@media (min-width: 760px) {
+  .proyecto { grid-template-columns: 15rem minmax(0, 1fr); padding: 1.4rem 1.6rem 1.5rem; }
+  .proyecto-lado { flex-direction: column; align-items: flex-start; }
+}
 .proyecto-acr { font-family: var(--f-display); font-size: 1.5rem; font-weight: 760; font-stretch: 125%; letter-spacing: -.01em; line-height: 1; }
 .proyecto h3 { font-family: var(--f-texto); font-size: 1.02rem; font-weight: 560; line-height: 1.38; }
 .proyecto ul { padding-left: 1.05rem; display: grid; gap: .35rem; font-size: .95rem; line-height: 1.5; }
@@ -635,7 +643,8 @@ dialog::backdrop { background: rgba(8, 12, 16, .62); backdrop-filter: blur(3px);
   a { text-decoration: none; }
   .pub-titulo a::after { content: " · doi.org/" attr(data-doi); font-family: var(--f-mono); font-size: 8pt; font-weight: 400; color: #555; }
   .pub-titulo a:not([data-doi])::after { content: ""; }
-  .proyectos { grid-template-columns: 1fr 1fr; }
+  .proyecto { grid-template-columns: 38mm minmax(0, 1fr); }
+  .proyecto-lado { flex-direction: column; align-items: flex-start; }
   .proyecto { border: 1px solid #ccc; }
   .retrato, .ficha .retrato { display: none !important; }
   .sobre { grid-template-columns: 1fr !important; gap: 8pt; }

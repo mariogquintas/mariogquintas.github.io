@@ -439,11 +439,12 @@
     return {
       cuenta: P.length,
       html: `<div class="proyectos">${P.map((p) => `<article class="proyecto" id="proy-${esc(p.id || U.slug(p.acronimo))}">
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap"><span class="proyecto-acr">${esc(p.acronimo)}</span>${p.sector ? `<span class="etq etq-acero">${esc(t(p.sector))}</span>` : ""}</div>
-        <h3>${md(p.titulo)}</h3>
-        <p class="meta">${[t(p.financiacion), p.ip ? "IP: " + p.ip : "", t(p.entidad)].filter(Boolean).map(esc).join(". ")}.</p>
-        <p class="meta-3">${esc(t(p.periodo))}${p.rol ? `. ${esc(t(p.rol))}` : ""}</p>
-        ${p.tareas && p.tareas.length ? `<ul>${p.tareas.map((x) => `<li>${md(x)}</li>`).join("")}</ul>` : ""}
+        <div class="proyecto-lado"><span class="proyecto-acr">${esc(p.acronimo)}</span>${p.sector ? `<span class="etq etq-acero">${esc(t(p.sector))}</span>` : ""}<p class="meta-3">${esc(t(p.periodo))}${p.rol ? `. ${esc(t(p.rol))}` : ""}</p></div>
+        <div class="proyecto-cuerpo">
+          <h3>${md(p.titulo)}</h3>
+          <p class="meta">${[t(p.financiacion), p.ip ? "IP: " + p.ip : "", t(p.entidad)].filter(Boolean).map(esc).join(". ")}.</p>
+          ${p.tareas && p.tareas.length ? `<ul>${p.tareas.map((x) => `<li>${md(x)}</li>`).join("")}</ul>` : ""}
+        </div>
       </article>`).join("")}</div>${CV().informesTecnicos ? `<p class="nota-pie">${md(CV().informesTecnicos)}.</p>` : ""}`
     };
   }
