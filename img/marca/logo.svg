@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 96" role="img" aria-label="Mario González Quintas">
+  <title>Mario González Quintas</title>
+  <g transform="translate(8 16)">
+    <circle cx="32" cy="31" r="25" fill="none" stroke="#15202b" stroke-width="4.2"/><path d="M14 41H19.5L26 22L32 35L38 22L44.5 41H50" fill="none" stroke="#15202b" stroke-width="3.6" stroke-miterlimit="8"/><path d="M47.5 47.5L58 58" stroke="#15202b" stroke-width="4.6" stroke-linecap="round"/>
+    <path d="M32 12V27" stroke="#d9461e" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="32" cy="12" r="3.2" fill="#d9461e"/>
+  </g>
+  <text x="88" y="52" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" font-stretch="expanded" fill="#15202b" letter-spacing="-0.4">Mario González Quintas</text>
+  <text x="88" y="76" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#66737e">LaserON · CINTECX · Universidade de Vigo</text>
+</svg>
