@@ -32,7 +32,7 @@ CV.perfil = {
   },
 
   // Dirección de tu web cuando esté publicada (sale en el CV en PDF). Ejemplo: "https://marioquintas.github.io"
-  web: "",
+  web: "https://mariogquintas.github.io/",
 
   titular: {
     es: "Ingeniero biomédico e investigador en procesado láser de biomateriales para implantes y dispositivos médicos.",

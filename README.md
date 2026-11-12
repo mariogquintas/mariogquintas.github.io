@@ -1,5 +1,7 @@
 # Web de Mario González Quintas
 
+Publicada en **https://mariogquintas.github.io/** (repositorio `mariogquintas.github.io` en GitHub).
+
 Web personal y CV: investigación, tesis, publicaciones, congresos, proyectos, docencia, formación, idiomas, premios y contacto. En español, inglés, gallego, portugués y francés, con modo claro y oscuro, buscador, gráficos que se calculan solos, exportación de citas, versión imprimible del CV, instalable como app y con un **panel de edición** para cambiarla desde el navegador.
 
 No necesita servidor ni base de datos: son archivos estáticos que se pueden alojar gratis.

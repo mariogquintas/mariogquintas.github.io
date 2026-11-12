@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mariogquintas.github.io/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mariogquintas.github.io/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mariogquintas.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="gl" href="https://mariogquintas.github.io/?lang=gl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mariogquintas.github.io/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mariogquintas.github.io/?lang=fr"/>
+  </url>
+  <url>
+    <loc>https://mariogquintas.github.io/cv.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+</urlset>

@@ -2,7 +2,7 @@
    Estrategia: los datos y las páginas se piden primero a la red (para ver
    siempre lo último) y, si no hay conexión, se sirven desde la caché.
    Al cambiar algo de diseño, sube el número de VERSION para renovar la caché. */
-const VERSION = "mgq-v4";
+const VERSION = "mgq-v5";
 const BASE = [
   "./", "index.html", "editor.html", "manifest.webmanifest",
   "assets/css/sitio.css", "assets/css/editor.css",

@@ -637,7 +637,7 @@
       lateral: total ? `<span>${fmtNum(total)} ${esc(ui("horas"))}</span>` : "",
       html: `<div class="cursos">${grupos.map(({ g, items }) => {
         const h = items.reduce((s, c) => s + (+c.horas || 0), 0);
-        return `<h3 class="subtitulo"${g === grupos[0].g ? ' style="margin-top:0"' : ""}>${esc(ui("grupoCurso." + g))}<small>${items.length}${h ? `, ${fmtNum(h)} ${esc(ui("horas"))}` : ""}</small></h3>
+        return `<h3 class="subtitulo"${g === grupos[0].g ? ' style="margin-top:0"' : ""}>${esc(ui("grupoCurso." + g))}${h ? `<small>${fmtNum(h)} ${esc(ui("horas"))} ${esc(ui("enTotal"))}</small>` : ""}</h3>
           <div class="tabla-caja"><table class="tabla"><tbody>${items.map((c) => `<tr id="curso-${C.indexOf(c)}"><td>${esc(U.fmtFecha(c.fecha))}</td><td>${md(c.nombre)}<div class="sec">${md(c.entidad)}</div></td><td class="num">${c.horas ? fmtNum(+c.horas) + " " + esc(ui("horas")) : ""}</td></tr>`).join("")}</tbody></table></div>`;
       }).join("")}</div>`
     };
