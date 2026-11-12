@@ -98,7 +98,7 @@
       exportNota: "Copia el texto o descárgalo como archivo.",
       metricasNota: "Métricas de citas",
       foto: "Foto de", monograma: "Monograma",
-      creditosFig: "Figuras de artículos en acceso abierto, reproducidas con su licencia.",
+      creditosFig: "Figuras de mis artículos y comunicaciones: las de acceso abierto, con su licencia; el resto, propias o con el crédito que se indica.",
       resultadosLinea: "Resultados de esta línea", otrosResultados: "Además",
       estadoTFE: { defendido: "Defendido", "en-curso": "En curso" },
       instalado: "App instalada", offline: "Sin conexión: mostrando la última versión guardada.",
@@ -167,7 +167,7 @@
       exportNota: "Copy the text or download it as a file.",
       metricasNota: "Citation metrics",
       foto: "Photo of", monograma: "Monogram",
-      creditosFig: "Figures from open-access articles, reproduced under their licence.",
+      creditosFig: "Figures from my articles and conference papers: open-access ones under their licence; the rest are my own or carry the credit shown.",
       resultadosLinea: "Outputs of this line", otrosResultados: "Also",
       estadoTFE: { defendido: "Defended", "en-curso": "In progress" },
       instalado: "App installed", offline: "Offline: showing the last saved version.",
@@ -236,7 +236,7 @@
       exportNota: "Copia o texto ou descárgao como arquivo.",
       metricasNota: "Métricas de citas",
       foto: "Foto de", monograma: "Monograma",
-      creditosFig: "Figuras de artigos en acceso aberto, reproducidas coa súa licenza.",
+      creditosFig: "Figuras dos meus artigos e comunicacións: as de acceso aberto, coa súa licenza; o resto, propias ou co crédito que se indica.",
       resultadosLinea: "Resultados desta liña", otrosResultados: "Ademais",
       estadoTFE: { defendido: "Defendido", "en-curso": "En curso" },
       instalado: "App instalada", offline: "Sen conexión: amosando a última versión gardada.",
@@ -306,7 +306,7 @@
       exportNota: "Copie o texto ou descarregue-o como ficheiro.",
       metricasNota: "Métricas de citações",
       foto: "Fotografia de", monograma: "Monograma",
-      creditosFig: "Figuras de artigos em acesso aberto, reproduzidas ao abrigo da respetiva licença.",
+      creditosFig: "Figuras dos meus artigos e comunicações: as de acesso aberto, ao abrigo da respetiva licença; as restantes, próprias ou com o crédito indicado.",
       resultadosLinea: "Resultados desta linha", otrosResultados: "Além disso",
       estadoTFE: { defendido: "Defendido", "en-curso": "Em curso" },
       instalado: "Aplicação instalada", offline: "Sem ligação: a mostrar a última versão guardada.",
@@ -364,7 +364,7 @@
       tipoAct: { gestion: "Vie universitaire", divulgacion: "Diffusion scientifique", otras: "Autres activités" },
       cifras: {
         pubs: "publications", jcr: "dans des revues JCR", q1: "dans des revues Q1", primer: "en premier auteur", coms: "communications à des congrès",
-        intl: "internationales", tfe: "mémoires de fin d’études co-encadrés et soutenus", tfeCurso: "en cours", horasDoc: "heures d’enseignement", horasDirectas: (h) => `${h} h en responsabilité directe`,
+        intl: "internationales", tfe: "mémoires de fin d’études co-encadrés et soutenus", tfeCurso: "en cours", horasDoc: "heures d’enseignement", horasDirectas: (h) => `${h} h sans co-enseignement`,
         horasForm: "heures de formation (équipements et cours)", coautores: "co-auteurs différents", paises: "pays", idiomas: "langues",
         porAnio: "Production par an", porAnioSub: "Publications et communications à des congrès", coaut: "Co-auteurs les plus fréquents",
         coautSub: "Travaux signés ensemble (publications et communications)", posicion: "Position dans la liste d’auteurs",
@@ -376,7 +376,7 @@
       exportNota: "Copiez le texte ou téléchargez-le sous forme de fichier.",
       metricasNota: "Indicateurs de citations",
       foto: "Photo de", monograma: "Monogramme",
-      creditosFig: "Figures d’articles en accès ouvert, reproduites selon leur licence.",
+      creditosFig: "Figures de mes articles et communications : celles en accès ouvert, selon leur licence ; les autres, personnelles ou avec le crédit indiqué.",
       resultadosLinea: "Résultats de cet axe", otrosResultados: "Également",
       estadoTFE: { defendido: "Soutenu", "en-curso": "En cours" },
       instalado: "Application installée", offline: "Hors ligne : affichage de la dernière version enregistrée.",
@@ -384,7 +384,7 @@
       citasN: (n) => `${n} citation${n > 1 ? "s" : ""}`, yEnLinea: " et en ligne", colAsignatura: "Matière", colTitulacion: "Formation", colCoautor: "Co-auteur",
       tfeTitulo: "Mémoires de fin d’études encadrés",
       tfeResumen: (d, c, e) => `${d} soutenus en co-encadrement${c ? `, ${c} en collaboration` : ""}${e ? `, ${e} en cours` : ""}`,
-      codirigidoCon: "Co-encadré avec", autoria: "Auteur", horasDocencia: (h, d) => d != null ? `${h} h d’enseignement (dont ${d} en responsabilité directe)` : `${h} h d’enseignement`,
+      codirigidoCon: "Co-encadré avec", autoria: "Auteur", horasDocencia: (h, d) => d != null ? `${h} h d’enseignement (dont ${d} sans co-enseignement)` : `${h} h d’enseignement`,
       elegirIdioma: "Choisir la langue",
       cvPdf: "CV en PDF",
       cv: { titulo: "Curriculum vitae", guardar: "Enregistrer en PDF", volver: "Retour au site", ayuda: "Dans la fenêtre d’impression, choisissez « Enregistrer au format PDF ».",
@@ -571,7 +571,10 @@
     const total = +tesis.trimestres || 16;
     const meses = U.mesesEntre(tesis.inicio, hoy);
     const q = Math.max(1, Math.min(total, Math.floor(meses / 3) + 1));
-    return { trimestre: q, total, pct: Math.round(((meses + 1) / (total * 3)) * 100), meses, empezada: meses >= 0 };
+    // Avance por tiempo transcurrido, contando la parte ya pasada del mes actual
+    const dias = new Date(hoy.getFullYear(), hoy.getMonth() + 1, 0).getDate();
+    const pct = Math.max(0, Math.min(100, Math.round(((meses + (hoy.getDate() - 1) / dias) / (total * 3)) * 100)));
+    return { trimestre: q, total, pct, meses, empezada: meses >= 0 };
   };
   U.trimestreEtiqueta = (inicio, n) => {
     const p = U.partes(inicio);

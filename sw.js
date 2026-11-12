@@ -1,6 +1,9 @@
 /* Service worker: permite instalar la web como app y verla sin conexión.
    Estrategia: los datos y las páginas se piden primero a la red (para ver
-   siempre lo último) y, si no hay conexión, se sirven desde la caché.
+   siempre lo último) y, si no hay conexión, se sirven desde la caché. Las
+   imágenes y fuentes salen de la caché y se renuevan en segundo plano (si
+   cambias una foto con el mismo nombre, se verá en la siguiente visita). Los
+   vídeos no pasan por aquí: los sirve siempre la red, por partes.
    Al cambiar algo de diseño, sube el número de VERSION para renovar la caché. */
 const VERSION = "mgq-v5";
 const BASE = [
@@ -23,10 +26,14 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET" || new URL(req.url).origin !== location.origin) return;
   const url = new URL(req.url);
+  if (req.headers.has("range") || /\.(mp4|webm|mov)$/i.test(url.pathname)) return;
   const red = /\.(html|js|css|webmanifest)$/.test(url.pathname) || url.pathname.endsWith("/");
   if (red) {
-    e.respondWith(fetch(req).then((r) => { const copia = r.clone(); caches.open(VERSION).then((c) => c.put(req, copia)); return r; }).catch(() => caches.match(req).then((r) => r || caches.match("index.html"))));
+    e.respondWith(fetch(req).then((r) => { if (r.status === 200) { const copia = r.clone(); caches.open(VERSION).then((c) => c.put(req, copia)); } return r; }).catch(() => caches.match(req).then((r) => r || caches.match("index.html"))));
   } else {
-    e.respondWith(caches.match(req).then((r) => r || fetch(req).then((res) => { const copia = res.clone(); caches.open(VERSION).then((c) => c.put(req, copia)); return res; })));
+    e.respondWith(caches.open(VERSION).then((c) => c.match(req).then((r) => {
+      const nueva = fetch(req).then((res) => { if (res.status === 200) c.put(req, res.clone()); return res; }).catch(() => r);
+      return r || nueva;
+    })));
   }
 });

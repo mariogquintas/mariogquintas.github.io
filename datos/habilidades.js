@@ -41,6 +41,6 @@ CV.habilidades = [
   },
   {
     grupo: { es: "Datos y programación", en: "Data and programming", gl: "Datos e programación", pt: "Dados e programação", fr: "Données et programmation" },
-    elementos: ["MATLAB", "Python", "R", "LabVIEW", "Origin", "Minitab", "ImageJ", { es: "Aplicaciones web y Android", en: "Web and Android apps", gl: "Aplicacións web e Android", pt: "Aplicações web e Android", fr: "Applications web et Android" }, { es: "Estadística y diseño de experimentos", en: "Statistics and design of experiments", gl: "Estatística e deseño de experimentos", pt: "Estatística e planeamento de experiências", fr: "Statistiques et plans d’expériences" }]
+    elementos: ["MATLAB", "Python", "R", "LabVIEW", { es: "PLC OMRON (Sysmac Studio)", en: "OMRON PLCs (Sysmac Studio)", gl: "PLC OMRON (Sysmac Studio)", pt: "PLC OMRON (Sysmac Studio)", fr: "Automates OMRON (Sysmac Studio)" }, "Origin", "Minitab", "ImageJ", { es: "Aplicaciones web y Android", en: "Web and Android apps", gl: "Aplicacións web e Android", pt: "Aplicações web e Android", fr: "Applications web et Android" }, { es: "Estadística y diseño de experimentos", en: "Statistics and design of experiments", gl: "Estatística e deseño de experimentos", pt: "Estatística e planeamento de experiências", fr: "Statistiques et plans d’expériences" }]
   }
 ];

@@ -467,7 +467,7 @@ sub, sup { font-size: .72em; line-height: 0; }
 .tabla td { padding: .62rem .7rem .62rem 0; border-bottom: 1px solid var(--linea-2); vertical-align: top; line-height: 1.4; }
 .tabla td.num, .tabla th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .tabla tfoot td { font-weight: 650; border-bottom: 0; }
-.tabla tfoot .directas { display: block; font-family: var(--f-display); font-size: .78rem; font-weight: 500; color: var(--tinta-3); white-space: nowrap; }
+.tabla tfoot .directas { display: block; font-family: var(--f-display); font-size: .78rem; font-weight: 500; color: var(--tinta-3); white-space: normal; }
 .tabla .sec { color: var(--tinta-3); font-size: .82rem; }
 
 /* ---------- Docencia y TFE ---------- */
